@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Country = require("../models/country");
 const { countryData } = require("./countries");
-
+const MongoDB_URL=process.env
 const connectDB = async () => {
   try {
     await mongoose.connect("mongodb://localhost/jwt-auth", {
