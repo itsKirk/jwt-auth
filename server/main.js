@@ -17,7 +17,7 @@ app.use(passport.initialize());
 // Enable CORS middleware
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: process.env.CLIENT_URL,
   })
 );
 
