@@ -24,7 +24,7 @@ const CountryCard = ({ country }) => {
           <div className="flex flex-col sm:flex-row">
             <div className="flex-none">
               <img
-                src={media.flag}
+                src={media.flag ? media.flag : ""}
                 alt={`Flag of ${name}`}
                 className="h-16 w-16 sm:h-24 sm:w-24 rounded-full"
               />
