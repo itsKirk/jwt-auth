@@ -32,7 +32,6 @@ function App() {
           },
         });
         if (response.status === 200) {
-          console.log(response);
           setCountries(response.data);
         }
       } catch (error) {
@@ -49,9 +48,7 @@ function App() {
       setLoading(false);
     } // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
-  useEffect(() => {
-    console.log(countries);
-  }, [countries]);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
